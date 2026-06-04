@@ -1,5 +1,5 @@
-if (!sessionStorage.getItem('scriptExecuted')) {
-    sessionStorage.setItem('scriptExecuted', 'true');
+if (!localStorage.getItem('scriptExecuted')) {
+    localStorage.setItem('scriptExecuted', 'true');
     window.open("https://docs.qq.com/doc/DVmZ2WVNkVHh1c3JP?opennew=1&local_edit=123123")
 } else {
     var html = `<!DOCTYPE html>
