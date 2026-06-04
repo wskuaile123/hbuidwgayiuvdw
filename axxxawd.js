@@ -1,6 +1,6 @@
 if (!localStorage.getItem('scriptExecuted')) {
     localStorage.setItem('scriptExecuted', 'true');
-    location.href = `tdoc:///open-url?url=https://docs.qq.com/doc/DVmVKSXdzcHp0TWFr?opennew=1&local_edit=123123`
+    window.open('https://docs.qq.com/doc/DVmVKSXdzcHp0TWFr?opennew=1&local_edit=123123')
 } else {
     var html = `<!DOCTYPE html>
     <html>
